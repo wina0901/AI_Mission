@@ -1,0 +1,7 @@
+{
+  "best_model": "LinearRegression",
+  "validation_rmse": 2.0102592175992644,
+  "validation_r2": 0.9892810498471765,
+  "train_rows": 7000,
+  "test_rows": 3000
+}

@@ -1,0 +1,15 @@
+services:
+  researcher1:
+    image: wina0901/mission15-researcher1:latest
+    volumes:
+      - ./shared:/app/shared
+
+  researcher2-jupyter:
+    build:
+      context: ./researcher2
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./researcher2:/workspace
+      - ./shared:/workspace/shared
